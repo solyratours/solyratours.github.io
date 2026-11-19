@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurghada Super Safari | SOLYRA</title>
+    <script>
+        try {
+            var savedTheme = localStorage.getItem("solyra_theme");
+            if (savedTheme === "dark") document.documentElement.setAttribute("data-theme", "dark");
+        } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ===== Header ===== -->
+<header id="header">
+    <a href="index.html#home" class="logo">SOLYRA</a>
+
+    <nav>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#trips">Trips</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch light / dark mode" title="Light / Dark">
+            <i class="fas fa-moon icon-moon"></i>
+            <i class="fas fa-sun icon-sun"></i>
+        </button>
+    </div>
+</header>
+
+<!-- ===== Trip Hero ===== -->
+<section class="trip-hero" id="top">
+    <img class="trip-hero-bg" id="heroBg" data-img="images/safaribackground" alt="Desert safari in Hurghada">
+    <div class="hero-shade"></div>
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-content">
+        <a href="index.html#trips" class="back-link"><i class="fas fa-arrow-left"></i> All trips</a>
+        <p class="hero-eyebrow">Hurghada · Desert Adventure</p>
+
+        <h1 class="hero-title">
+            <span class="word" style="--i:0"><span>Hurghada</span></span>
+            <span class="word" style="--i:1"><span>Super</span></span>
+            <span class="word gold" style="--i:2"><span>Safari</span></span>
+        </h1>
+
+        <div class="trip-chips">
+            <span class="chip"><i class="far fa-clock"></i> 11:30 AM – 7:00 PM</span>
+            <span class="chip"><i class="fas fa-bus"></i> Hotel pick-up &amp; drop-off</span>
+            <span class="chip"><i class="fas fa-child"></i> Kids under 6 free</span>
+        </div>
+
+        <div class="hero-actions">
+            <a href="https://wa.me/201279333178?text=Hello%2C%20I%27d%20like%20to%20book%20the%20Hurghada%20Super%20Safari" target="_blank" class="btn btn-gold">
+                <i class="fab fa-whatsapp"></i> Book on WhatsApp
+            </a>
+            <a href="#included" class="btn btn-ghost">What's included</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Intro ===== -->
+<section class="tp-section">
+    <div class="trip-intro reveal">
+        <p class="eyebrow">Adventure awaits</p>
+        <h2 class="tp-title">The Ultimate Desert Adventure</h2>
+        <p class="lead">
+            Ready for the ultimate desert adventure? Our Hurghada Super Safari is a full day packed with
+            thrills, culture and unforgettable memories — from the roar of beach buggies and spider cars
+            to a traditional Bedouin evening under the desert stars.
+        </p>
+        <blockquote class="pull-quote">
+            This isn't just a tour — it's a full sensory journey through the magic of the Egyptian desert.
+        </blockquote>
+    </div>
+</section>
+
+<!-- ===== Gallery ===== -->
+<section class="tp-section tp-gallery">
+    <div class="section-head reveal">
+        <p class="eyebrow">A glimpse of the day</p>
+        <h2>Safari Moments</h2>
+    </div>
+
+    <div class="gallery">
+        <figure class="g-item reveal"><img data-img="images/s1" alt="Safari photo 1"><span class="g-zoom"><i class="fas fa-expand"></i></span></figure>
+        <figure class="g-item reveal" style="--d:.08s"><img data-img="images/s2" alt="Safari photo 2"><span class="g-zoom"><i class="fas fa-expand"></i></span></figure>
+        <figure class="g-item reveal" style="--d:.16s"><img data-img="images/s3" alt="Safari photo 3"><span class="g-zoom"><i class="fas fa-expand"></i></span></figure>
+        <figure class="g-item reveal" style="--d:.08s"><img data-img="images/s4" alt="Safari photo 4"><span class="g-zoom"><i class="fas fa-expand"></i></span></figure>
+        <figure class="g-item reveal" style="--d:.16s"><img data-img="images/s5" alt="Safari photo 5"><span class="g-zoom"><i class="fas fa-expand"></i></span></figure>
+        <figure class="g-item reveal"><img data-img="images/s6" alt="Safari photo 6"><span class="g-zoom"><i class="fas fa-expand"></i></span></figure>
+    </div>
+</section>
+
+<!-- ===== What's included ===== -->
+<section class="tp-section alt" id="included">
+    <div class="section-head reveal">
+        <p class="eyebrow">Everything in one day</p>
+        <h2>What's Included</h2>
+    </div>
+
+    <div class="included-grid">
+        <div class="inc-card reveal"><span class="inc-icon"><i class="fas fa-car-side"></i></span><h3>Beach Buggy Ride</h3></div>
+        <div class="inc-card reveal"><span class="inc-icon"><i class="fas fa-truck-monster"></i></span><h3>Spider Car Adventure</h3></div>
+        <div class="inc-card reveal"><span class="inc-icon"><i class="fas fa-truck-pickup"></i></span><h3>50 KM Jeep Safari through the desert</h3></div>
+        <div class="inc-card reveal"><span class="inc-icon"><i class="fas fa-paw"></i></span><h3>Camel Riding</h3></div>
+        <div class="inc-card reveal"><span class="inc-icon"><i class="fas fa-dragon"></i></span><h3>Reptile House visit</h3></div>
+        <div class="inc-card reveal"><span class="inc-icon"><i class="fas fa-mug-hot"></i></span><h3>Traditional Bedouin Bread &amp; Tea</h3></div>
+        <div class="inc-card reveal"><span class="inc-icon"><i class="fas fa-leaf"></i></span><h3>Bedouin Pharmacy experience</h3></div>
+        <div class="inc-card reveal"><span class="inc-icon"><i class="fas fa-utensils"></i></span><h3>BBQ Dinner under the stars</h3></div>
+        <div class="inc-card reveal"><span class="inc-icon"><i class="fas fa-music"></i></span><h3>Belly Dance Show</h3></div>
+        <div class="inc-card reveal"><span class="inc-icon"><i class="fas fa-star"></i></span><h3>Tanoura Show</h3></div>
+        <div class="inc-card reveal"><span class="inc-icon"><i class="fas fa-bus"></i></span><h3>Hotel Pick-up &amp; Drop-off</h3></div>
+    </div>
+</section>
+
+<!-- ===== Schedule & pricing ===== -->
+<section class="tp-section">
+    <div class="section-head reveal">
+        <p class="eyebrow">Good to know</p>
+        <h2>Plan Your Day</h2>
+    </div>
+
+    <div class="info-grid">
+        <div class="info-card reveal">
+            <span class="inc-icon"><i class="far fa-clock"></i></span>
+            <h3>Daily Schedule</h3>
+            <p class="info-big">11:30 AM – 7:00 PM</p>
+            <p>Every day, a full day of adventure from pick-up to drop-off.</p>
+        </div>
+
+        <div class="info-card reveal" style="--d:.1s">
+            <span class="inc-icon"><i class="fas fa-people-roof"></i></span>
+            <h3>Family-Friendly Pricing</h3>
+            <div class="price-row"><span>Children 6–11 years</span><span class="badge">50% off</span></div>
+            <div class="price-row"><span>Children under 6</span><span class="badge">Free</span></div>
+        </div>
+
+        <div class="info-card reveal" style="--d:.2s">
+            <span class="inc-icon"><i class="fas fa-bus"></i></span>
+            <h3>Hotel Transfer</h3>
+            <p class="info-big">Included</p>
+            <p>We pick you up from your hotel and bring you back after the show.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Book ===== -->
+<section class="trip-cta">
+    <div class="orb orb-3"></div>
+
+    <div class="cta-inner reveal">
+        <p class="eyebrow">Spots fill up fast</p>
+        <h2 class="tp-title">Book Your Super Safari Today</h2>
+        <p class="lead">
+            Make your Hurghada trip unforgettable. Message us for today's price and availability,
+            and we'll reserve your seat.
+        </p>
+
+        <div class="cta-btns">
+            <a href="https://wa.me/201279333178?text=Hello%2C%20I%27d%20like%20to%20book%20the%20Hurghada%20Super%20Safari" target="_blank" class="modern-wa-btn">
+                <i class="fab fa-whatsapp"></i> WhatsApp Me
+            </a>
+            <a href="https://www.facebook.com/share/14vEnQAFnun/?mibextid=wwXIfr" target="_blank" rel="noopener" class="modern-fb-btn">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/solyra_tours" target="_blank" rel="noopener" class="modern-ig-btn">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+
+        <a href="index.html#trips" class="cta-back"><i class="fas fa-arrow-left"></i> Back to all trips</a>
+    </div>
+
+    <footer>© 2026 solyra_tours. All rights reserved.</footer>
+</section>
+
+<!-- ===== Lightbox ===== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button type="button" class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+    <img id="lbImg" src="" alt="Safari photo">
+    <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    <span class="lb-count" id="lbCount"></span>
+</div>
+
+<script src="java.js"></script>
+</body>
+</html>

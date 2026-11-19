@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLYRA</title>
+    <script>
+        try {
+            var savedTheme = localStorage.getItem("solyra_theme");
+            if (savedTheme === "dark") document.documentElement.setAttribute("data-theme", "dark");
+        } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ===== Header ===== -->
+<header id="header">
+    <a href="#home" class="logo">SOLYRA</a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#trips">Trips</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch light / dark mode" title="Light / Dark">
+            <i class="fas fa-moon icon-moon"></i>
+            <i class="fas fa-sun icon-sun"></i>
+        </button>
+    </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-shade"></div>
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-content">
+        <p class="hero-eyebrow">Hurghada · Red Sea</p>
+
+        <h1 class="hero-title">
+            <span class="word" style="--i:0"><span>Desert</span></span>
+            <span class="word" style="--i:1"><span>&amp;</span></span>
+            <span class="word" style="--i:2"><span>Sea</span></span>
+            <span class="word" style="--i:3"><span>Adventures</span></span>
+            <span class="word" style="--i:4"><span>in</span></span>
+            <span class="word gold" style="--i:5"><span>Hurghada</span></span>
+        </h1>
+
+        <div class="hero-actions">
+            <a href="#trips" class="btn btn-gold">
+                Explore Trips <i class="fas fa-arrow-down"></i>
+            </a>        </div>
+    </div>
+
+</section>
+
+<!-- ===== Trips ===== -->
+<section class="trips-section" id="trips">
+    <div class="section-head reveal">
+        <p class="eyebrow">Choose your adventure</p>
+        <h2>Our Trips</h2>
+    </div>
+
+    <div class="trips-container">
+
+        <a class="trip-card reveal" style="--d:0s" href="safari.html">
+            <img src="images/safaribackground.jpg" alt="Desert Safari">
+            <div class="trip-shade"></div>
+            <span class="trip-no">01</span>
+            <div class="trip-info">
+                <hr>
+                <h3 class="trip-title">Desert Safari</h3>
+                <p>Quad biking across the dunes, a Bedouin village visit and dinner under the desert stars.</p>
+                <span class="trip-link">View details <i class="fas fa-arrow-right"></i></span>
+            </div>
+        </a>
+
+        <a class="trip-card reveal" style="--d:.15s" href="redsea.html">
+            <img src="images/seabackgriund.jpg" alt="Red Sea Trips">
+            <div class="trip-shade"></div>
+            <span class="trip-no">02</span>
+            <div class="trip-info">
+                <hr>
+                <h3 class="trip-title">Red Sea Trips</h3>
+                <p>Yacht days to Orange Bay and the islands, snorkeling over coral reefs, and swimming with dolphins.</p>
+                <span class="trip-link">View trips <i class="fas fa-arrow-right"></i></span>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<!-- ===== Reviews ===== -->
+<section class="review-section" id="reviews">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="section-head reveal">
+        <p class="eyebrow">What travellers say</p>
+        <h2>Visitor Reviews</h2>
+    </div>
+
+    <div class="review-rows reveal">
+        <div class="review-row row-left"><div class="review-track"></div></div>
+        <div class="review-row row-right"><div class="review-track"></div></div>
+    </div>
+
+    <div class="review-cta reveal">
+        <p>Travelled with us? We'd love to hear how it went.</p>
+        <a href="https://www.facebook.com/share/14vEnQAFnun/?mibextid=wwXIfr" target="_blank" rel="noopener" class="btn btn-gold">
+            <i class="fab fa-facebook-f"></i> Share your experience
+        </a>
+    </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="modern-contact" id="contact">
+    <div class="orb orb-3"></div>
+
+    <h2 class="big-bg-text">CONTACT</h2>
+
+    <div class="contact-center-content reveal">
+        <p class="eyebrow">Let's plan your trip</p>
+        <h3 class="person-name">Gooda</h3>
+        <hr class="contact-divider">
+
+        <div class="qr-and-wa">
+            <div class="qr-container">
+                <img src="images/QR2.png" alt="WhatsApp QR Code" class="modern-qr">
+                <span class="qr-caption">Scan to chat</span>
+            </div>
+
+            <div class="wa-side">
+                <p>Or reach me directly</p>
+                <a href="https://wa.me/201279333178" target="_blank" class="modern-wa-btn">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Me
+                </a>
+                <a href="https://www.facebook.com/share/14vEnQAFnun/?mibextid=wwXIfr" target="_blank" rel="noopener" class="modern-fb-btn">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/solyra_tours" target="_blank" rel="noopener" class="modern-ig-btn">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>© 2026 solyra_tours. All rights reserved.</footer>
+</section>
+
+<!-- ===== Lightbox ===== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button type="button" class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+    <img id="lbImg" src="" alt="Guest review">
+    <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    <span class="lb-count" id="lbCount"></span>
+</div>
+
+<script src="java.js"></script>
+</body>
+</html>

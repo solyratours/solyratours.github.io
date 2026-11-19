@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Sea Trips | SOLYRA</title>
+    <script>
+        try {
+            var savedTheme = localStorage.getItem("solyra_theme");
+            if (savedTheme === "dark") document.documentElement.setAttribute("data-theme", "dark");
+        } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ===== Header ===== -->
+<header id="header">
+    <a href="index.html#home" class="logo">SOLYRA</a>
+
+    <nav>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#trips">Trips</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch light / dark mode" title="Light / Dark">
+            <i class="fas fa-moon icon-moon"></i>
+            <i class="fas fa-sun icon-sun"></i>
+        </button>
+    </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="trip-hero" id="top">
+    <img class="trip-hero-bg" id="heroBg" data-img="images/Orange Bay/t1" alt="Red Sea trips from Hurghada">
+    <div class="hero-shade"></div>
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-content">
+        <a href="index.html#trips" class="back-link"><i class="fas fa-arrow-left"></i> All trips</a>
+        <p class="hero-eyebrow">Hurghada · Boat &amp; Yacht Trips</p>
+
+        <h1 class="hero-title">
+            <span class="word gold" style="--i:0"><span>Red</span></span>
+            <span class="word gold" style="--i:1"><span>Sea</span></span>
+            <span class="word" style="--i:2"><span>Trips</span></span>
+        </h1>
+
+        <div class="trip-chips">
+            <a href="#orange-bay" class="chip"><i class="fas fa-ship"></i> Orange Bay</a>
+            <a href="#amwaj-island" class="chip"><i class="fas fa-umbrella-beach"></i> Amwaj Island</a>
+            <a href="#paradise-island" class="chip"><i class="fas fa-water"></i> Paradise Island</a>
+            <a href="#dolphin-house" class="chip"><i class="fas fa-fish"></i> Dolphin House</a>
+        </div>
+
+        <div class="hero-actions">
+            <a href="https://wa.me/201279333178?text=Hello%2C%20I%27m%20interested%20in%20your%20Red%20Sea%20trips" target="_blank" class="btn btn-gold">
+                <i class="fab fa-whatsapp"></i> Book on WhatsApp
+            </a>
+            <a href="#orange-bay" class="btn btn-ghost">See the trips</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== 1. ORANGE BAY ===================== -->
+<section class="tp-section sea-trip" id="orange-bay">
+    <div class="sea-grid">
+        <div class="sea-media reveal" data-folder="images/Orange Bay" data-count="9">
+            <div class="sea-main">
+                <img class="sea-main-img" alt="Orange Bay">
+                <span class="sea-zoom"><i class="fas fa-expand"></i></span>
+                <button type="button" class="sea-arrow sea-prev" aria-label="Previous photo"><i class="fas fa-chevron-left"></i></button>
+                <button type="button" class="sea-arrow sea-next" aria-label="Next photo"><i class="fas fa-chevron-right"></i></button>
+                <span class="sea-count"></span>
+            </div>
+            <div class="sea-thumbs"></div>
+        </div>
+
+        <div class="sea-info reveal" style="--d:.1s">
+            <p class="eyebrow">Paradise is calling your name</p>
+            <h2 class="tp-title">Orange Bay</h2>
+
+            <p class="sea-lead">
+                Imagine crystal-clear turquoise waters, powdery white sand and a sky that seems to touch the sea.
+                Welcome to Orange Bay — where dreams become your reality.
+            </p>
+
+            <ul class="sea-list">
+                <li>
+                    <span class="inc-icon"><i class="fas fa-ship"></i></span>
+                    <div><strong>Luxury yacht cruise</strong><span>Set sail across the Red Sea, feel the breeze and take in views that will leave you speechless.</span></div>
+                </li>
+                <li>
+                    <span class="inc-icon"><i class="fas fa-umbrella-beach"></i></span>
+                    <div><strong>Pristine beaches</strong><span>Sip your favourite drink, let time slow down and swing above the water in pure island bliss.</span></div>
+                </li>
+                <li>
+                    <span class="inc-icon"><i class="fas fa-fish"></i></span>
+                    <div><strong>Snorkeling</strong><span>Vibrant coral reefs, tropical fish and crystal-clear visibility for the perfect underwater adventure.</span></div>
+                </li>
+                <li>
+                    <span class="inc-icon"><i class="fas fa-utensils"></i></span>
+                    <div><strong>Lunch on board</strong><span>A delicious lunch surrounded by nothing but ocean and horizon.</span></div>
+                </li>
+            </ul>
+
+            <p class="sea-note">Orange Bay isn't just a trip — it's a memory you'll treasure forever.</p>
+
+            <a href="https://wa.me/201279333178?text=Hello%2C%20I%27d%20like%20to%20book%20the%20Orange%20Bay%20trip" target="_blank" class="btn btn-gold">
+                <i class="fab fa-whatsapp"></i> Reserve your spot
+            </a>
+            <p class="sea-small">Limited seats available.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== 2. AMWAJ ISLAND ===================== -->
+<section class="tp-section sea-trip alt" id="amwaj-island">
+    <div class="sea-grid reverse">
+        <div class="sea-media reveal" data-folder="images/AMWAJ ISLAND" data-count="5">
+            <div class="sea-main">
+                <img class="sea-main-img" alt="Amwaj Island">
+                <span class="sea-zoom"><i class="fas fa-expand"></i></span>
+                <button type="button" class="sea-arrow sea-prev" aria-label="Previous photo"><i class="fas fa-chevron-left"></i></button>
+                <button type="button" class="sea-arrow sea-next" aria-label="Next photo"><i class="fas fa-chevron-right"></i></button>
+                <span class="sea-count"></span>
+            </div>
+            <div class="sea-thumbs"></div>
+        </div>
+
+        <div class="sea-info reveal" style="--d:.1s">
+            <p class="eyebrow">Full-day yacht trip</p>
+            <h2 class="tp-title">Amwaj Island</h2>
+
+            <div class="sea-meta">
+                <span class="chip"><i class="far fa-clock"></i> 9:00 AM – 4:00 PM</span>
+                <span class="chip"><i class="fas fa-users"></i> Family-only experience</span>
+            </div>
+
+            <p class="sea-lead">
+                Escape to the beautiful waters of the Red Sea and enjoy a relaxing family day aboard our yacht.
+            </p>
+
+            <ul class="sea-list">
+                <li>
+                    <span class="inc-icon"><i class="fas fa-ship"></i></span>
+                    <div><strong>Yacht cruise</strong><span>A comfortable sailing trip through the crystal-clear waters of the Red Sea.</span></div>
+                </li>
+                <li>
+                    <span class="inc-icon"><i class="fas fa-fish"></i></span>
+                    <div><strong>2 snorkeling stops</strong><span>Swim, explore stunning coral reefs and discover the colorful marine life of the Red Sea.</span></div>
+                </li>
+                <li>
+                    <span class="inc-icon"><i class="fas fa-umbrella-beach"></i></span>
+                    <div><strong>Amwaj Island</strong><span>Relax on the sandy beach, swim in the clear water and soak up the island atmosphere.</span></div>
+                </li>
+                <li>
+                    <span class="inc-icon"><i class="fas fa-utensils"></i></span>
+                    <div><strong>Open buffet lunch on board</strong><span>Served on the yacht, accompanied by refreshing drinks.</span></div>
+                </li>
+            </ul>
+
+            <p class="sea-note">The perfect choice for a relaxing and unforgettable family day at sea.</p>
+
+            <a href="https://wa.me/201279333178?text=Hello%2C%20I%27d%20like%20prices%20and%20to%20book%20the%20Amwaj%20Island%20trip" target="_blank" class="btn btn-gold">
+                <i class="fab fa-whatsapp"></i> Prices &amp; reservations
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== 3. PARADISE ISLAND ===================== -->
+<section class="tp-section sea-trip" id="paradise-island">
+    <div class="sea-grid">
+        <div class="sea-media reveal" data-folder="images/PARADISE ISLAND" data-count="6">
+            <div class="sea-main">
+                <img class="sea-main-img" alt="Paradise Island">
+                <span class="sea-zoom"><i class="fas fa-expand"></i></span>
+                <button type="button" class="sea-arrow sea-prev" aria-label="Previous photo"><i class="fas fa-chevron-left"></i></button>
+                <button type="button" class="sea-arrow sea-next" aria-label="Next photo"><i class="fas fa-chevron-right"></i></button>
+                <span class="sea-count"></span>
+            </div>
+            <div class="sea-thumbs"></div>
+        </div>
+
+        <div class="sea-info reveal" style="--d:.1s">
+            <p class="eyebrow">A day in paradise</p>
+            <h2 class="tp-title">Paradise Island</h2>
+
+            <p class="sea-lead">
+                Turquoise water, soft white sand and the best snorkeling the Red Sea has to offer —
+                a day you won't forget.
+            </p>
+
+            <ul class="sea-list">
+                <li>
+                    <span class="inc-icon"><i class="fas fa-water"></i></span>
+                    <div><strong>Crystal-clear turquoise waters</strong></div>
+                </li>
+                <li>
+                    <span class="inc-icon"><i class="fas fa-fish"></i></span>
+                    <div><strong>World-class snorkeling</strong></div>
+                </li>
+                <li>
+                    <span class="inc-icon"><i class="fas fa-umbrella-beach"></i></span>
+                    <div><strong>Pristine white sand beaches</strong></div>
+                </li>
+                <li>
+                    <span class="inc-icon"><i class="fas fa-sun"></i></span>
+                    <div><strong>Unforgettable island vibes</strong></div>
+                </li>
+            </ul>
+
+            <a href="https://wa.me/201279333178?text=Hello%2C%20I%27d%20like%20to%20book%20the%20Paradise%20Island%20trip" target="_blank" class="btn btn-gold">
+                <i class="fab fa-whatsapp"></i> Book Paradise Island
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== 4. DOLPHIN HOUSE ===================== -->
+<section class="tp-section sea-trip alt" id="dolphin-house">
+    <div class="sea-grid reverse">
+        <div class="sea-media reveal" data-folder="images/DOLPHINS" data-count="4">
+            <div class="sea-main">
+                <img class="sea-main-img" alt="Swim with dolphins at Dolphin House">
+                <span class="sea-zoom"><i class="fas fa-expand"></i></span>
+                <button type="button" class="sea-arrow sea-prev" aria-label="Previous photo"><i class="fas fa-chevron-left"></i></button>
+                <button type="button" class="sea-arrow sea-next" aria-label="Next photo"><i class="fas fa-chevron-right"></i></button>
+                <span class="sea-count"></span>
+            </div>
+            <div class="sea-thumbs"></div>
+        </div>
+
+        <div class="sea-info reveal" style="--d:.1s">
+            <p class="eyebrow">The most magical experience</p>
+            <h2 class="tp-title">Swim with Dolphins at Dolphin House</h2>
+
+            <p class="sea-lead">
+                The most magical experience in the Red Sea is waiting for you.
+            </p>
+
+            <ul class="sea-list">
+                <li>
+                    <span class="inc-icon"><i class="fas fa-bus"></i></span>
+                    <div><strong>Hotel pick-up &amp; drop-off</strong><span>Anywhere in Hurghada.</span></div>
+                </li>
+                <li>
+                    <span class="inc-icon"><i class="fas fa-ship"></i></span>
+                    <div><strong>Boat trip to the Dolphin House reef</strong></div>
+                </li>
+                <li>
+                    <span class="inc-icon"><i class="fas fa-fish"></i></span>
+                    <div><strong>Snorkeling equipment provided</strong></div>
+                </li>
+                <li>
+                    <span class="inc-icon"><i class="fas fa-utensils"></i></span>
+                    <div><strong>Lunch buffet</strong><span>Plus soft drinks, water, tea &amp; coffee.</span></div>
+                </li>
+                <li>
+                    <span class="inc-icon"><i class="fas fa-sun"></i></span>
+                    <div><strong>3 hours of swimming &amp; snorkeling</strong><span>Plus free time to enjoy the sun.</span></div>
+                </li>
+            </ul>
+
+            <p class="sea-note">Watch the dolphins play in their natural home, then dive into crystal-clear water full of colorful coral and fish.</p>
+
+            <a href="https://wa.me/201279333178?text=Hello%2C%20I%27d%20like%20to%20book%20the%20Dolphin%20House%20trip" target="_blank" class="btn btn-gold">
+                <i class="fab fa-whatsapp"></i> Book with Solyra
+            </a>
+            <p class="sea-small">Limited spots every day · Hurghada, Egypt</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Book ===== -->
+<section class="trip-cta">
+    <div class="orb orb-3"></div>
+
+    <div class="cta-inner reveal">
+        <p class="eyebrow">Limited spots every day</p>
+        <h2 class="tp-title">Choose Your Red Sea Day</h2>
+        <p class="lead">
+            Message us for prices and availability, and we'll reserve your seat.
+        </p>
+
+        <div class="cta-btns">
+            <a href="https://wa.me/201279333178?text=Hello%2C%20I%27m%20interested%20in%20your%20Red%20Sea%20trips" target="_blank" class="modern-wa-btn">
+                <i class="fab fa-whatsapp"></i> WhatsApp Me
+            </a>
+            <a href="https://www.facebook.com/share/14vEnQAFnun/?mibextid=wwXIfr" target="_blank" rel="noopener" class="modern-fb-btn">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://www.instagram.com/solyra_tours" target="_blank" rel="noopener" class="modern-ig-btn">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+
+        <a href="index.html#trips" class="cta-back"><i class="fas fa-arrow-left"></i> Back to all trips</a>
+    </div>
+
+    <footer>© 2026 solyra_tours. All rights reserved.</footer>
+</section>
+
+<!-- ===== Lightbox ===== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button type="button" class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+    <img id="lbImg" src="" alt="Trip photo">
+    <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    <span class="lb-count" id="lbCount"></span>
+</div>
+
+<script src="java.js"></script>
+</body>
+</html>
